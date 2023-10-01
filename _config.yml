@@ -7,9 +7,9 @@
 
 # Site Settings
 
-logo                   : "/assets/upcite-logo.png"
-favicon                : "/assets/upcite-logo.png"
-site_icon              : "/assets/upcite-logo.png"
+logo                   : "/assets/upcite_logo.png"
+favicon                : "/assets/upcite_logo.png"
+site_icon              : "/assets/upcite_logo.png"
 
 locale                   : "en-US"
 title                    : "Songyang WANG's homepage"
