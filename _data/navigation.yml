@@ -16,9 +16,6 @@ main:
   # - title: "Blog Posts"
   #   url: /year-archive/
 
-- title: <img src="../images/upcite_logo.png" width="5%" height="5%">
-url: /cv/
-    
   - title: "CV"
     url: /cv/
     
