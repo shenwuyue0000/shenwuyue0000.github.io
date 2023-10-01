@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "<img src="../images/upcite_logo.png" width="10%" height="10%"> About me:"
+title: "About me:"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
