@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+![111](../images/upcite_logo.png)
 I am currently a PhD student at [Université Paris Cité](https://u-paris.fr/en/), working with [Prof. Salima Benbernou](https://helios2.mi.parisdescartes.fr/~sbenbern/), [Associate Prof. Mourad Ouziri](https://ieeexplore.ieee.org/author/37681790600) and [Associate Prof. Ioana Ileana](https://www.semanticscholar.org/author/Ioana-Ileana/2438736). 
 
 ------
