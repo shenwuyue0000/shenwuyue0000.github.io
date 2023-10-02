@@ -49,13 +49,55 @@ gapi.analytics.ready(function() {
 
 
 <script>
-	  // 获取总浏览次数
-gtag('event', 'page_view', {
-  'send_to': 'G-VVHW2RQ1YW', // 替换为您的 GA4 测量 ID
-  'event_callback': function() {
-    var totalPageViews = gtag('get', 'totalPageViews', 'page_view');
-    document.getElementById('totalPageViews').textContent = '总浏览次数：' + totalPageViews;
+
+	const { google } = require('googleapis');
+const key = require('./client_secret_139521967332-531u4q0cod4nl4s8p7ptd48f2fgse13k.apps.googleusercontent.com.json'); // 替换为您的服务帐户凭据文件路径
+
+// 设置身份验证凭据
+const jwtClient = new google.auth.JWT(
+  key.client_email,
+  null,
+  key.private_key,
+  ['https://www.googleapis.com/auth/analytics.readonly'],
+);
+
+// 创建 Google Analytics Reporting API 客户端
+const analyticsreporting = google.analyticsreporting('v4');
+
+// 设置请求参数
+const request = {
+  reportRequests: [
+    {
+      viewId: 'ga:G-VVHW2RQ1YW', // 替换为您的 GA4 测量 ID
+      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }], // 指定日期范围（七天内）
+      metrics: [{ expression: 'ga:pageviews' }], // 检索页面浏览次数
+    },
+  ],
+};
+
+// 发送 API 请求
+jwtClient.authorize(function (err, tokens) {
+  if (err) {
+    console.error('API 认证失败', err);
+    return;
   }
+
+  analyticsreporting.reports.batchGet(
+    {
+      auth: jwtClient,
+      resource: request,
+    },
+    function (err, response) {
+      if (err) {
+        console.error('API 请求失败', err);
+        return;
+      }
+
+      const report = response.data.reports[0];
+      const pageviews = report.data.totals[0].values[0];
+      console.log('七日内总浏览次数：', pageviews);
+    }
+  );
 });
 	
 </script>
