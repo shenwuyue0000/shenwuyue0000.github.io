@@ -48,7 +48,7 @@ gapi.analytics.ready(function() {
     </script>
 
 
-
+<script>
 	  // 获取总浏览次数
 gtag('event', 'page_view', {
   'send_to': 'G-VVHW2RQ1YW', // 替换为您的 GA4 测量 ID
@@ -57,7 +57,9 @@ gtag('event', 'page_view', {
     document.getElementById('totalPageViews').textContent = '总浏览次数：' + totalPageViews;
   }
 });
-
+	
+</script>
+	  
     
     {% include head.html %}
     {% include head/custom.html %}
