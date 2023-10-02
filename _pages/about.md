@@ -17,4 +17,4 @@ Before that, I got my bachelor’s degree in computer science from [Shanghai Uni
 
 ------
 
-My research topic concerns **Temporal Reasoning for Web Data Cleaning in a World Evolving 'Temporal Reasoning for Web Data Cleaning in a World Evolving.** Nowadays, Data quality is becoming essential for a large variety of applications in many domains. In order to achieve research goals, we need to use machine learning, symbolic artificial intelligence, knowledge graphs, time series data processing, etc.
+My research topic concerns **Temporal Reasoning for Web Data Cleaning in a World Evolving.** Nowadays, Data quality is becoming essential for a large variety of applications in many domains, especially in the time dimension. In order to achieve research goals, we need to use machine learning, symbolic artificial intelligence, knowledge graphs, time series data processing, etc.
