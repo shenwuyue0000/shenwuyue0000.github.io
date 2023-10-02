@@ -49,45 +49,7 @@ var _hmt = _hmt || [];
 
 </script>
 
-	  
-  <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=300840089"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-
-  gtag('config', 'G-VVHW2RQ1YW');
-</script>
-
-
-    <script>
-
-      // 引入 Google API 客户端库
-gapi.analytics.ready(function() {
-  // 创建 Google Analytics 客户端对象
-  var client = gapi.analytics.client.init({
-    clientId: '139521967332-531u4q0cod4nl4s8p7ptd48f2fgse13k.apps.googleusercontent.com', // 您的 Google Analytics API 客户端 ID
-  });
-
-  // 获取页面浏览次数
-  client.query({
-    ids: 'ga:YOUR-VIEW-ID', // 您的 Google Analytics 视图 ID
-    metrics: 'ga:pageviews'
-  }).then(function(response) {
-    var pageviews = response.totalResults ? response.rows[0][0] : '0';
-    // 在网页上显示浏览次数
-    document.getElementById('pageviews').textContent = '浏览次数：' + pageviews;
-  });
-});
-      
-    </script>
-
-
-
-	  
+	
     
     {% include head.html %}
     {% include head/custom.html %}
