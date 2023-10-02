@@ -158,6 +158,23 @@ jwtClient.authorize(function (err, tokens) {
   });
 </script>
 
+<script>
+
+	// 使用 gtag.js 的示例代码
+// 替换 'GA_MEASUREMENT_ID' 为您的 GA4 测量 ID
+gtag('event', 'page_view', {
+  'send_to': 'GA_MEASUREMENT_ID',
+  'event_callback': function() {
+    // 获取总浏览次数
+    const totalPageviews = gtag('get', 'page_view');
+    
+    // 在控制台中打印总浏览次数
+    console.log('总浏览次数：', totalPageviews);
+  }
+});
+	
+</script>
+
         
         {% include footer.html %}
       </footer>
