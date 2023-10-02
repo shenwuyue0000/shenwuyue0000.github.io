@@ -43,6 +43,28 @@ layout: compress
     <div class="page__footer">
       <footer>
         {% include footer/custom.html %}
+
+        <div id="visit-count">加载中...</div>
+
+        <script>
+  // 获取 Google Analytics 数据
+  function getVisitCount() {
+    gtag('event', 'page_view', {
+      'send_to': 'G-VVHW2RQ1YW',
+      'event_callback': function() {
+        // 获取页面访问次数
+        var visitCount = ga.getAll()[0].get('pageviews');
+        
+        // 将访问次数显示在页面上
+        document.getElementById('visit-count').textContent = '访问次数：' + visitCount;
+      }
+    });
+  }
+  
+  // 调用获取访问次数函数
+  getVisitCount();
+</script>
+        
         444
         555
         {% include footer.html %}
