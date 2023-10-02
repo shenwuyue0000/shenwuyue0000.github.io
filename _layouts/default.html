@@ -26,6 +26,18 @@ var _hmt = _hmt || [];
 })();
 </script>
 
+<script>
+	  // 获取百度统计总访问量
+var _hmt = _hmt || [];
+_hmt.push(['_requirePlugin', 'PageView']);
+_hmt.push(['PageView::countPageView']);
+_hmt.push(['PageView::getTotalPageView', function(totalPageView) {
+  // 在网页上显示总访问量
+  document.getElementById("totalPageViews").innerText = totalPageView;
+}]);
+
+</script>
+
 	  
   <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=300840089"></script>
@@ -83,7 +95,8 @@ gapi.analytics.ready(function() {
         {% include footer/custom.html %}
 
         
-<div id="totalPageViews">总浏览次数：加载中...</div>
+
+	<div id="totalPageViews"></div>
        
       
         <script>
