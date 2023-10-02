@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <img src="../images/upcite_logo.png" width="5%" height="5%">
-I am currently a PhD student at [Université Paris Cité](https://u-paris.fr/en/), working with [Prof. Salima Benbernou](https://helios2.mi.parisdescartes.fr/~sbenbern/), [Associate Prof. Mourad Ouziri](https://ieeexplore.ieee.org/author/37681790600) and [Associate Prof. Ioana Ileana](https://www.semanticscholar.org/author/Ioana-Ileana/2438736). 
+I am currently a PhD student at [Université Paris Cité (University of Paris)](https://u-paris.fr/en/), working with [Prof. Salima Benbernou](https://helios2.mi.parisdescartes.fr/~sbenbern/), [Associate Prof. Mourad Ouziri](https://ieeexplore.ieee.org/author/37681790600) and [Associate Prof. Ioana Ileana](https://www.semanticscholar.org/author/Ioana-Ileana/2438736). 
 
 ------
 
