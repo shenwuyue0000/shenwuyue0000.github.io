@@ -10,6 +10,7 @@ layout: compress
 
   <link rel="icon" href="../images/upcite_logo.png" type="image/png">
 
+	  <script src="https://www.google.com/analytics/js/ga.js"></script>
     
   <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=300840089"></script>
@@ -48,15 +49,14 @@ gapi.analytics.ready(function() {
 
 
 
-	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVHW2RQ1YW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
+	  // 获取总浏览次数
+gtag('event', 'page_view', {
+  'send_to': 'G-VVHW2RQ1YW', // 替换为您的 GA4 测量 ID
+  'event_callback': function() {
+    var totalPageViews = gtag('get', 'totalPageViews', 'page_view');
+    document.getElementById('totalPageViews').textContent = '总浏览次数：' + totalPageViews;
   }
-  gtag('js', new Date());
-  gtag('config', 'G-VVHW2RQ1YW');
-</script>
+});
 
     
     {% include head.html %}
