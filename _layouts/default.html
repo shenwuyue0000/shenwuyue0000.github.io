@@ -46,15 +46,16 @@ gapi.analytics.ready(function() {
       
     </script>
 
-<script type="text/javascript">
 
-	if(null !=localStorage.pagecount){
-		localStorage.pagecount=Number(localStorage.pagecount)+1;
-	}else{
-		localStorage.pagecount=1;
-		}
-	document.write("已经访问了"+localStorage.pagecount+"次<br>");
 
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVHW2RQ1YW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-VVHW2RQ1YW');
 </script>
 
     
@@ -75,7 +76,7 @@ gapi.analytics.ready(function() {
         {% include footer/custom.html %}
 
         
-<div id="visit-count">loading...</div> <div> visiters of this page</div>
+<div id="totalPageViews">总浏览次数：加载中...</div>
        
       
         <script>
@@ -95,6 +96,22 @@ gapi.analytics.ready(function() {
   
   // 调用获取访问次数函数
   getVisitCount();
+</script>
+
+
+	      <script>
+  // 使用 Google Analytics 4 API 查询事件数据
+  gtag('event', 'page_view', {
+    'send_to': 'G-VVHW2RQ1YW',
+    'event_category': 'Page Views',
+    'event_label': 'Total Page Views'
+  });
+
+  // 显示数据在网页上
+  gtag('config', 'G-VVHW2RQ1YW', {
+    'page_title': 'Total Page Views',
+    'page_location': window.location.href
+  });
 </script>
 
         
