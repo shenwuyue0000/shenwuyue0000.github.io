@@ -11,6 +11,6 @@ redirect_from:
 
 
 
-<a href="../CV_Songyang WANG_UPCite_UTC_SHU.pdf" target="_blank">Click to view the pdf version of cv</a>
+<a href="../CV_Songyang WANG_UPCite_UTC_SHU.pd" target="_blank">Click to view the pdf version of cv</a>
 
 
