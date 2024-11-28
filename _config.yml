@@ -7,9 +7,9 @@
 
 # Site Settings
 
-logo                   : "/images/upcite_logo.png"
-favicon                : "/images/upcite_logo.png"
-site_icon              : "/images/upcite_logo.png"
+# logo                   : "/images/upcite_logo.png"
+# favicon                : "/images/upcite_logo.png"
+# site_icon              : "/images/upcite_logo.png"
 
 locale                   : "en-US"
 title                    : "Songyang WANG's homepage"
@@ -87,7 +87,7 @@ analytics:
 author:
   name             : "Songyang WANG"
   avatar           : "profile_wsy.png"
-  bio              : "Université Paris Cité (University of Paris)"
+  # bio              : "Université Paris Cité (University of Paris)"
   location         : "Paris, France"
   employer         :
   pubmed           :  # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
